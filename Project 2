@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <dl>
+        <dt><strong>Electric Vehicles</strong></dt>
+        <dd>Electric vehicles (EVs) are transforming the transportation landscape by offering a cleaner, more
+            sustainable
+            alternative to traditional gasoline-powered cars. As global concern over climate change grows, EVs have
+            become a key
+            focus for reducing carbon emissions. According to the<mark>U.S. Department of Energy</mark> , EVs produce
+            fewer emissions and can be powered by renewable energy sources. Meanwhile, companies like <mark>Tesla</mark>
+            and Rivian are innovating rapidly in this space.
+        </dd>
+    </dl> 
+        <ul>
+        <h2>Advantages</h2>
+            <li><mark>Environmental Benefits:</mark> Zero tailpipe emissions</li>
+            <li><mark>Lower Operating Costs:</mark>Less maintenance, cheaper charging vs fuel</li>
+            <li><mark>Government Incentives:</mark>Tax credits and rebates available in many regions</li>
+        </ul>
+        <table border="5">
+            <tr>
+                <th>Company</th>
+                <th>Market share</th>
+                <th>Headquarters</th>
+            </tr>
+            <tr>
+                <td>Tesla</td>
+                <td>25%</td>
+                <td>U.S.A</td>
+                </tr>
+            <tr>
+                <td>BYD Auto</td>
+                <td>20%</td>
+                <td>China</td>
+                </tr>
+            <tr>
+                <td>Nissan</td>
+                <td>15%</td>
+                <td>Japan</td>
+                </tr>
+        </table>
+        <h2>References</h2>
+        <ul>
+            <li><a href="https://www.energy.gov/eere/electricvehicles/electric-vehicles">U.S Energy Department</a>
+                </li>
+                <li><a href="https://www.tesla.com/" >Tesla Official Site</a>
+                    </li>
+                    <li><a href="https://www.rivian.com/">Rivian Official Site</a>
+                        </li>
+                        </ul>
+                
+                </body>
+                </html>
