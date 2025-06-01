@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Japanese Cuisine</title>
+</head>
+
+<body>
+
+    <h1>🍱 <i>Japanese Cuisine</i> 🍣</h1>
+
+    <p><b>Japanese cuisine</b> emphasizes seasonal ingredients, visual presentation, and harmony of flavor.</p>
+
+    <h2>Popular Japanese Dishes</h2>
+    <ul>
+        <li><b>Sushi</b> - Rice with raw fish or vegetables</li>
+        <li><i>Ramen</i> - Noodle soup with various toppings</li>
+        <li>Tempura - Lightly battered and fried seafood or vegetables</li>
+        <li>Okonomiyaki - Japanese savory pancake</li>
+        <li>Mochi - Sweet rice cake</li>
+    </ul>
+
+    <h2>Essential Ingredients</h2>
+    <ol>
+        <li>Soy sauce</li>
+        <li>Mirin (sweet rice wine)</li>
+        <li>Miso paste</li>
+        <li>Seaweed (Nori)</li>
+        <li>Wasabi</li>
+    </ol>
+
+    <h2>Sample Meal Plan</h2>
+    <table border="1" cellpadding="10" style="border-collapse: collapse;">
+        <tr>
+            <th>Course</th>
+            <th>Dish</th>
+        </tr>
+        <tr>
+            <td><b>Starter</b></td>
+            <td>Edamame</td>
+        </tr>
+        <tr>
+            <td><b>Main</b></td>
+            <td><i>Sushi Platter</i></td>
+        </tr>
+        <tr>
+            <td><b>Dessert</b></td>
+            <td>Mochi Ice Cream</td>
+        </tr>
+    </table>
+
+    <h2>Gallery</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Sushi_platter.jpg" alt="Sushi Platter" width="300">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Japanese_Ramen.jpg" alt="Ramen" width="300">
+
+    <h2>Watch: How to Make Sushi</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/nIoOv6lWYnk" title="How to Make Sushi"
+        ></iframe>
+
+    <h2>Listen: Traditional Japanese Music</h2>
+    <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+
+    <h2>Useful Links</h2>
+    <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Japanese_cuisine" target="_blank">Wikipedia - Japanese Cuisine</a>
+        </li>
+        <li><a href="https://www.justonecookbook.com/" target="_blank">Just One Cookbook - Japanese Recipes</a></li>
+    </ul>
+
+</body>
+
+</html>
