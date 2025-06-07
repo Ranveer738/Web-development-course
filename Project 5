@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>footer {
+    position: absolute;
+    bottom:0;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1><em>  Uttar Pradesh Food-26 Dishes that you are a Must Try!</em></h1>
+        <nav>
+            <ul>
+                <li><a href="#1">1. Puri Aloo</a></li>
+                <li><a href="#2">2. Chole Bhature</a></li>
+                <li><a href="#3">3. Kachori</a></li>
+                <li><a href="#4">4. Litti Chokha</a></li>
+        </nav>
+    </header>
+<main><table border="2" cellpadding="10" cellspacing="`100">
+    <tr>
+        <th>Dish</th>
+        <th>Description</th>
+    </tr>
+    
+        <Section>
+            <td>Puri Aloo</td>
+            </section>
+            <section><article>
+                <td>
+                    <p>Puri Aloo is a popular breakfast dish in Uttar Pradesh, consisting of deep-fried puris served with spicy potato curry. The puris are made from whole wheat flour and are puffed up when fried, making them soft and fluffy.</p></td></article>
+                    <div><tr>
+                        <td>Chole Bhature</td>
+                        <article>
+                            <td>
+                                Chole Bhature is a famous North Indian dish that originated in Punjab but is widely enjoyed in Uttar Pradesh as well. It consists of spicy chickpeas (chole) served with deep-fried bread (bhature). The combination is hearty and flavorful, often accompanied by pickles and yogurt.
+                            </td></tr>
+                    </div>
+            </article>
+    </Section>
+    <tr><div>
+        <td>Kachori</td>
+        <article><td>Kachori is a popular snack in Uttar Pradesh, made from spiced lentil or pea filling wrapped in a flaky pastry and deep-fried. It is often served with tamarind chutney or yogurt.</td></article>
+        </tr>
+    </div>
+    <tr><section>
+        <td>Litti Chokha</td>
+        <article><td>Litti Chokha is a traditional dish from the Bhojpuri region of Uttar Pradesh. It consists of round wheat flour balls stuffed with roasted gram flour and spices (litti) served with mashed spiced eggplant, tomato, and potatoes (chokha).</td></article>
+</tr>
+    </section>
+</table></main>
+
+    <footer>
+       <p>© 2023 Uttar Pradesh Food Guide</p> 
+        For more information, visit our <a href="https://www.holidify.com/pages/uttar-pradesh-food-1703.html">Website</a>
+    </footer>
+</body>
+</html>
