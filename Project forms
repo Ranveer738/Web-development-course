@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <h1>Details of Users</h1>
+        <fieldset style="border: 2px solid black; padding: 20px; width: 50%; margin: auto;">
+            <legend>
+                <h2><em>Personal Details:</em></h2>
+            </legend>
+            <label for="name">First Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="name">Last Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="Gender">Gender</label>
+            <br>
+            <input type="radio">Male<br>
+            <input type="radio">Female<br>
+            <input type="radio">Other<br><br>
+            <label for="email">Email ID:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br><br>
+            <label for="date">Date of Birth:</label><br>
+            <input type="date" id="date" name="date"><br><br>
+            <label for="Address">Address:</label><br>
+            <textarea id="address" name="address" rows="4" cols="50" border="2px"></textarea><br><br>
+            <label for="Image">Upload Image:</label><br>
+            <input type="file" id="image" name="image"><br><br>
+            <center><label for="submit">Submit:</label><br>
+                <input type="submit" id="submit" name="submit"><br><br>
+                <label for="Reset">Reset:</label><br>
+                <input type="reset" id="reset" name="reset"><br><br>
+            </center>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
