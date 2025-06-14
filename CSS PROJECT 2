@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+          background-color: black;
+        }
+       
+    </style>
+</head>
+<p style="color: white;font-size: large;">Web development is a broad field that encompasses the creation and maintenance of websites and web applications. It involves various aspects such as web design, web content development, client-side scripting, server-side scripting, and database management. Web developers use languages like HTML, CSS, JavaScript, and server-side languages like PHP, Python, or Ruby to build interactive and dynamic websites. The field is constantly evolving with new technologies and frameworks emerging to enhance user experience and functionality.</p>
+<div style="background-color: rgb(0, 221, 255); color: black; ">
+        <p style="font-size: large;"><em><b>Web development is the process of creating and maintaining websites. It involves various tasks such as web design,
+        content creation, client-side scripting, server-side scripting, and database management.
+        Web developers use a combination of programming languages, frameworks, and tools to build interactive and dynamic web
+        applications. The field is constantly evolving with new technologies and best practices emerging to enhance user
+        experience and functionality. Web development can be categorized into front-end development, which focuses on the visual
+        aspects of a website, and back-end development, which deals with server-side logic and database management</em></b>
+        </p>
+        </div>
+
+</p>
+
+<body>
+
+    
+</body>
+</html>
