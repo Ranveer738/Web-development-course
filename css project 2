@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .element {
+      width: 300px;
+      height: 200px;
+      background: linear-gradient(to top left, #ff7e5f, #feb47b);
+    }
+  </style>
+</head>
+<body>
+  <div class="element"></div>
+</body>
+</html>
