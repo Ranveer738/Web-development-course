@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .img-left {
+            float: left;
+            width: 100px;
+            margin-right: 10px;
+        }
+
+        .img-right {
+            float: right;
+            width: 100px;
+            margin-left: 10px;
+        }
+        .container {
+            width: 500px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Float Right</h2>
+        <p>In this example, the image will float to the right in the paragraph, and the text in the paragraph will wrap
+            around the image.</p>
+
+        <img src="https://images.pexels.com/photos/675313/pexels-photo-675313.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"margin-right: 10px
+            class="img-left">
+
+        
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGqKOoMLRKEhcVIJ4asmV9TSpWSZmfUJIk4Q&s"
+            class="img-right">
+    </div>
+
+</body>
+
+</html>
