@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border:3px solid blue;
+            right: 30px;
+
+
+        }
+        .absolute {
+            position: absolute;
+            left: 50px;
+            border:3px solid red;
+
+        }
+        .relative {
+            position: relative;
+            left: 100px;
+            border:3px solid green;
+
+        }
+        .fixed {
+            position: fixed;
+            top:0px;
+            right:20px;
+            width:300px;
+            border:3px solid purple;
+
+        }
+        .sticky {
+            position: sticky;
+            top:1px;
+            width:100px;
+            background-color: yellow;
+            left:20px;
+            border:3px solid orange;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Positioning</h1>
+    <div>With no positioning Property</div>
+    <div class ="sticky">With sticky positioning</div>
+    <div class ="relative">With relative positioning</div>
+    <div class ="absolute">With absolute positioning</div>
+    <div class ="fixed">With fixed positioning</div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</body>
+</html>
