@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first {
+            opacity: 0.1;
+            background-color: lightblue;
+            border: 2px solid blue;
+            padding: 20px;
+        }
+        .second {
+            opacity: 0.3;
+            background-color: lightgreen;
+            border: 2px solid green;
+            padding: 20px;
+        }
+        .third {
+            opacity: 0.6;
+            background-color: lightcoral;
+            border: 2px solid red;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Opacity</h1>
+    <div class="first">
+        <p>This is the first div with opacity 0.1<p>
+    </div>
+    <div class="second">
+        <p>This is the second div with opacity 0.3<p>
+    </div>
+    <div class="third">
+        <p>This is the third div with opacity 0.6<p>
+    </div>
+</body>
+</html>
