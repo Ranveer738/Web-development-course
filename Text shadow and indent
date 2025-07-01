@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #class {
+            text-shadow: 2px 2px 4px yellow;
+        }
+        .shadow {
+            box-shadow: 5px 5px 1px gray;
+        }
+        #indent {
+            text-indent: 50px;
+        }
+
+        </style>
+
+</head>
+<body>
+    <h1 id="class">Text Shadow</h1>
+    <h2 class="shadow">Box Shadow</h2>
+    <p>This is an example of text indentation</p>
+    <p id="indent">This paragraph has a text indent.</p>
+</body>
+</html>
