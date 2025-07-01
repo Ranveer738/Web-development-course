@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first {
+            font-size: 30px;
+            color: red;
+        }
+        .B {
+            font-family: Arial, sans-serif;
+            color: blue;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Typography</h1>
+    <p class="first">Welcome to Codingal</p>
+    <p class="B">Welcome to Codingal</p>
+
+</body>
+</html>
