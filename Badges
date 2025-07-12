@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Contextual Badges</h1>
+        <span class="badge badge-primary"> 50% off</span>
+        <span class="badge badge-secondary">Sale Sale</span>
+        <span class="badge badge-success">New</span>
+        <span class="badge badge-danger">Out of Stock</span>
+        <span class="badge badge-warning">Limited Time Offer</span>
+        <span class="badge badge-info">Free Shipping</span>
+        <span class="badge badge-light">Best Seller</span>
+        <span class="badge badge-dark">Exclusive</span>
+
+
+
+
+
+    
+</body>
+</html>
