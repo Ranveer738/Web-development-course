@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Country Info Table</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        img {
+            width: 100px;
+            height: auto;
+            object-fit: cover;
+        }
+
+        th,
+        td {
+            vertical-align: middle;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Countries and Cultural Info</h2>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Country</th>
+                        <th>Capital</th>
+                        <th>Currency</th>
+                        <th>Festival</th>
+                        <th>Picture</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>India</td>
+                        <td>New Delhi</td>
+                        <td>Indian Rupee (INR)</td>
+                        <td>Diwali</td>
+                        <td><img src="https://images.unsplash.com/photo-1542831371-2f8b0c3d4e5f?auto=format&fit=crop&w=600&q=60"
+                                alt="India"></td>
+                    </tr>
+                    <tr>
+                        <td>USA</td>
+                        <td>Washington, D.C.</td>
+                        <td>US Dollar (USD)</td>
+                        <td>Thanksgiving</td>
+                        <td><img src="https://images.unsplash.com/photo-1589652717521-10c0d092dea9?auto=format&fit=crop&w=600&q=60"
+                                alt="USA"></td>
+                    </tr>
+                    <tr>
+                        <td>Japan</td>
+                        <td>Tokyo</td>
+                        <td>Yen (JPY)</td>
+                        <td>Hanami</td>
+                        <td><img src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?auto=format&fit=crop&w=600&q=60"
+                                alt="Japan"></td>
+                    </tr>
+                    <tr>
+                        <td>Brazil</td>
+                        <td>Brasília</td>
+                        <td>Brazilian Real (BRL)</td>
+                        <td>Carnival</td>
+                        <td><img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Carnaval_de_Salvador.jpg"
+                                alt="Brazil"></td>
+                    </tr>
+                    <tr>
+                        <td>France</td>
+                        <td>Paris</td>
+                        <td>Euro (EUR)</td>
+                        <td>Bastille Day</td>
+                        <td><img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=600&q=60"
+                                alt="France"></td>
+                    </tr>
+                    <tr>
+                        <td>China</td>
+                        <td>Beijing</td>
+                        <td>Yuan (CNY)</td>
+                        <td>Chinese New Year</td>
+                        <td><img src="https://images.unsplash.com/photo-1578926375605-eaf7559b1458?auto=format&fit=crop&w=600&q=60"
+                                alt="China"></td>
+                    </tr>
+                    <tr>
+                        <td>Italy</td>
+                        <td>Rome</td>
+                        <td>Euro (EUR)</td>
+                        <td>Ferragosto</td>
+                        <td><img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Colosseum_in_Rome%2C_Italy_-_April_2007.jpg"
+                                alt="Italy"></td>
+                    </tr>
+                    <tr>
+                        <td>Egypt</td>
+                        <td>Cairo</td>
+                        <td>Egyptian Pound (EGP)</td>
+                        <td>Sham el-Nessim</td>
+                        <td><img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Kheops-Pyramid.jpg"
+                                alt="Egypt"></td>
+                    </tr>
+                    <tr>
+                        <td>Australia</td>
+                        <td>Canberra</td>
+                        <td>Australian Dollar (AUD)</td>
+                        <td>Australia Day</td>
+                        <td><img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Australia_Day_2010.jpg"
+                                alt="Australia"></td>
+                    </tr>
+                    <tr>
+                        <td>Mexico</td>
+                        <td>Mexico City</td>
+                        <td>Mexican Peso (MXN)</td>
+                        <td>Día de los Muertos</td>
+                        <td><img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Day_of_the_Dead_altar.jpg"
+                                alt="Mexico"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
+
