@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Box Model, Table & Float Example</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0077cc;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        .container {
+            width: 100%;
+            overflow: auto;
+        
+        }
+
+        .sidebar {
+            float: left;
+            width: 25%;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .main {
+            float: right;
+            width: 75%;
+            padding: 20px;
+        }
+
+        .box {
+            background-color: #e0ffe0;
+            padding: 20px;
+            margin: 20px 0;
+            border: 2px solid #00aa00;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #999;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        footer {
+            clear: both;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        My Web Page Example
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <h3>Sidebar</h3>
+            <p>This is the sidebar using <code>float: left</code>.</p>
+        </div>
+
+        <div class="main">
+            <h2>Main Content</h2>
+            <div class="box">
+                <h4>Box Model Section</h4>
+                <p>This box uses padding, margin, and border to demonstrate the box model.</p>
+            </div>
+
+            <h3>Sample Table</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Occupation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alice</td>
+                        <td>30</td>
+                        <td>Engineer</td>
+                    </tr>
+                    <tr>
+                        <td>Bob</td>
+                        <td>25</td>
+                        <td>Designer</td>
+                    </tr>
+                    <tr>
+                        <td>Charlie</td>
+                        <td>28</td>
+                        <td>Teacher</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 My Website
+    </footer>
+
+</body>
+
+</html>
