@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Typography and Effects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .ribbon {
+            background-color: #ff7f73;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 10px 30px 10px 15px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .ribbon::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: -30px;
+            width: 0;
+            height: 0;
+            border-top: 30px solid transparent;
+            border-bottom: 30px solid transparent;
+            border-left: 30px solid #ff7f73;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        ul {
+            margin: 10px 0 20px 20px;
+        }
+
+        td {
+            vertical-align: top;
+        }
+
+        .heading {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .section {
+            margin-top: 25px;
+        }
+
+        .typography {
+            font-family: 'Georgia', serif;
+            font-size: 28px;
+        }
+
+        .text-decoration {
+            text-decoration: underline overline line-through;
+            text-transform: uppercase;
+        }
+
+        .text-shadow {
+            font-size: 24px;
+            text-shadow: 2px 2px 4px gray;
+        }
+
+        .text-indent {
+            text-indent: 50px;
+            width: 70%;
+        }
+
+        .box-shadow {
+            width: 300px;
+            padding: 20px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+            background-color: #f0f0f0;
+            margin-top: 10px;
+        }
+
+        .transform {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #d4e157;
+            transform: rotate(-5deg) scale(1.1);
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <table width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+            <td>
+                <div class="ribbon">Overview</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="content">
+                    <div class="heading">Topics introduced</div>
+                    <ul>
+                        <li>Typography</li>
+                        <li>Transform</li>
+                        <li>Text decoration, text-transform</li>
+                        <li>Text shadow</li>
+                        <li>Text indent</li>
+                        <li>Box shadow</li>
+                    </ul>
+
+                    <div class="heading">Topic in detail</div>
+
+                    <div class="section typography">This is an example of Typography using Georgia font.</div>
+
+                    <div class="section text-decoration">This is decorated and transformed TEXT.</div>
+
+                    <div class="section text-shadow">This text has a shadow effect.</div>
+
+                    <div class="section text-indent">
+                        This paragraph demonstrates text indentation. The first line starts with an indent to show how
+                        readable formatting can improve layout clarity.
+                    </div>
+
+                    <div class="section box-shadow">
+                        This box has a shadow around it using the <code>box-shadow</code> property.
+                    </div>
+
+                    <div class="section transform">Transformed Box</div>
+
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
