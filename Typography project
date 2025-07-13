@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sustainable Development</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body class="p-4">
+
+    <div class="container">
+
+        <h1 class="display-4 text-center">Sustainable Development</h1>
+        <p class="lead text-center">Balancing Environment, Economy, and Society</p>
+
+        <ul>
+            <li>Typography</li>
+            <li>Display Headings and Text Centre</li>
+            <li>Small and Description List</li>
+            <li>Mark and Code</li>
+            <li>Abbr, pre and blockquote</li>
+            <li>Tables</li>
+        </ul>
+
+        <hr>
+
+        <h2>What is Sustainable Development?</h2>
+        <p>Sustainable development means <mark>meeting the needs of the present</mark> without compromising the ability
+            of future generations to meet their own needs.</p>
+        <p><small>This concept was first introduced in the Brundtland Report of 1987.</small></p>
+
+        <h3>Key Pillars</h3>
+        <dl>
+            <dt>Environment</dt>
+            <dd>Protecting natural resources and biodiversity.</dd>
+            <dt>Economy</dt>
+            <dd>Promoting inclusive economic growth and employment.</dd>
+            <dt>Society</dt>
+            <dd>Ensuring social equity and access to basic services.</dd>
+        </dl>
+
+        <h3>Use of Markup</h3>
+        <p>The tag <code>&lt;abbr&gt;</code> is used for abbreviations like <abbr title="United Nations">UN</abbr>.</p>
+        <p>The <code>&lt;mark&gt;</code> tag is used to <mark>highlight text</mark>.</p>
+
+        <h3>Blockquote & Pre</h3>
+        <blockquote class="blockquote">
+            <p>"We do not inherit the Earth from our ancestors, we borrow it from our children."</p>
+            <footer class="blockquote-footer">Native American Proverb</footer>
+        </blockquote>
+
+        <pre>
+Goal 7: Ensure access to affordable, reliable, sustainable and modern energy for all
+Goal 13: Take urgent action to combat climate change and its impacts
+Goal 15: Protect, restore and promote sustainable use of terrestrial ecosystems
+    </pre>
+
+        <h3>Sustainable Development Goals Table</h3>
+        <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th>#</th>
+                    <th>Goal</th>
+                    <th>Focus Area</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>7</td>
+                    <td>Affordable and Clean Energy</td>
+                    <td>Environment</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Climate Action</td>
+                    <td>Environment</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Decent Work and Economic Growth</td>
+                    <td>Economy</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</body>
+
+</html>
