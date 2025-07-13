@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Hobbies</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body class="p-4">
+
+  <div class="container">
+    <h3><strong>Topics introduced</strong></h3>
+    <ul>
+      <li>Reading</li>
+      <li>Drawing</li>
+      <li>Gardening</li>
+    </ul>
+
+    <h5 class="mt-4"><strong>Topic in details</strong></h5>
+
+    <h4>Reading</h4>
+    <p>Reading enhances knowledge, vocabulary, and imagination. It is a hobby that improves focus and reduces stress.</p>
+    <div class="hobby-reading p-3 border mb-4 bg-light">
+      Reading books expands the mind.
+    </div>
+
+    <h4>Drawing</h4>
+    <p>Drawing allows creative expression through visual art. It includes sketching, painting, and digital art.</p>
+    <div class="hobby-drawing p-3 border mb-4 bg-light">
+      Art is the journey of a free soul.
+    </div>
+
+    <h4>Gardening</h4>
+    <p>Gardening connects us with nature and provides relaxation. It teaches patience and responsibility.</p>
+    <div class="hobby-gardening p-3 border mb-4 bg-light">
+      Growing plants brings peace and joy.
+    </div>
+
+    <h4>Hobby Comparison Table</h4>
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th>Hobby</th>
+          <th>Type</th>
+          <th>Benefits</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Reading</td>
+          <td>Mental</td>
+          <td>Knowledge, Focus</td>
+        </tr>
+        <tr>
+          <td>Drawing</td>
+          <td>Creative</td>
+          <td>Imagination, Relaxation</td>
+        </tr>
+        <tr>
+          <td>Gardening</td>
+          <td>Physical</td>
+          <td>Health, Nature Connection</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
