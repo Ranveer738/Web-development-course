@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Solar System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 20px;
+        }
+
+        .overview-header {
+            background-color: #ffa500;
+            color: white;
+            padding: 10px 20px;
+            font-weight: bold;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .planet-img {
+            height: 150px;
+            object-fit: contain;
+        }
+
+        .section-title {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="overview-header">The Solar System</div>
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark mt-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Solar Science</a>
+            <div class="navbar-collapse collapse show">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Planets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sun</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Moons</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h5 class="mt-4">Topics Introduced</h5>
+    <ul>
+        <li>The Sun</li>
+        <li>Planets</li>
+        <li>Moons</li>
+        <li>Asteroids</li>
+    </ul>
+
+    <div class="mt-4">
+        <p>Loading Planetary Data...</p>
+        <div class="spinner-border text-warning"></div>
+    </div>
+
+    <h5 class="section-title">Planets of the Solar System</h5>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg"
+                    class="card-img-top planet-img" alt="Earth">
+                <div class="card-body">
+                    <h5 class="card-title">Earth</h5>
+                    <p class="card-text">Our home planet, the third from the Sun, known for its blue oceans and
+                        life-supporting atmosphere.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg"
+                    class="card-img-top planet-img" alt="Mars">
+                <div class="card-body">
+                    <h5 class="card-title">Mars</h5>
+                    <p class="card-text">The Red Planet, known for its dusty surface and the possibility of ancient
+                        water.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Jupiter.jpg"
+                    class="card-img-top planet-img" alt="Jupiter">
+                <div class="card-body">
+                    <h5 class="card-title">Jupiter</h5>
+                    <p class="card-text">The largest planet with a famous Great Red Spot and many moons including
+                        Ganymede.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Saturn_during_Equinox.jpg"
+                    class="card-img-top planet-img" alt="Saturn">
+                <div class="card-body">
+                    <h5 class="card-title">Saturn</h5>
+                    <p class="card-text">Known for its stunning ring system, Saturn is the second-largest planet in the
+                        solar system.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h5 class="section-title">Explore More</h5>
+    <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+    <p>Current page: 2</p>
+</body>
+
+</html>
