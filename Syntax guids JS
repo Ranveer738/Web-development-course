@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="a"></h1>
+    <p id="b"></p>
+    <h2 id="c"></h2>
+    <p id="d"></p>
+    <script>
+        // This is a comment explaining the following code
+        document.getElementById('a').innerHTML="Javascript Syntax Guide";
+        document.getElementById('b').innerHTML="This document provides a brief overview of JavaScript syntax and commenting styles.";
+        document.getElementById('c').innerHTML="Commenting in JavaScript";
+        document.getElementById('d').innerHTML="JavaScript supports both single-line and multi-line comments. Single-line comments start with //, while multi-line comments are enclosed between /* and */. Comments are used to explain code and make it more readable without affecting the execution of the script.";
+        // End of script
+        </script>
+
+</body>
+</html>
