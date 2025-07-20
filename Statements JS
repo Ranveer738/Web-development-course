@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript Statements</h1>
+    <h2>Differences of two Numbers</h2>
+    <h3 id="result"></h3>
+    <script>
+        var num1 = 15; // Statement 1: 
+        var num2 = 10; // Statement 2:
+        var dif = num1 - num2; // Statement 3
+        document.getElementById('result').innerHTML = "The Difference of " + num1 + "and" + num2 + "=" + dif    // Statement 4
+    </script>
+</body>
+</html>
