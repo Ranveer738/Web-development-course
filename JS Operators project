@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript Operators</h1>
+    <h2 id="a"></h2>
+    <h2 id="b"></h2>
+    <h2 id="c"></h2>
+    <h2 id="d"></h2>
+    <h2 id="e"></h2>
+    <h2 id="f"></h2>
+    <h2 id="g"></h2>
+    <h2 id="h"></h2>
+    <h2 id="i"></h2>
+    <script>
+        var num1 = 20; // First number
+        var num2 = 10; // Second number
+        document.getElementById('a').innerHTML = "Addition: " + (num1 + num2); // Addition operator
+        document.getElementById('b').innerHTML = "Subtraction: " + (num1 - num2); // Subtraction operator
+        document.getElementById('c').innerHTML = "Multiplication: " + (num1 * num2); // Multiplication operator
+        document.getElementById('d').innerHTML = "Division: " + (num1 / num2); // Division operator
+        document.getElementById('e').innerHTML = "Modulus: " + (num1 % num2); // Modulus operator
+        document.getElementById('f').innerHTML = "Assignment: " + (num1 -= num2); // Assignment operator
+         document.getElementById('g').innerHTML = "Assignment: " + (num1 += num2); // Assignment operator
+          document.getElementById('h').innerHTML = "Assignment: " + (num1 *= num2); // Assignment operator
+           document.getElementById('i').innerHTML = "Assignment: " + (num1 /= num2); // Assignment operator
+
+        // End of script
+    </script>
