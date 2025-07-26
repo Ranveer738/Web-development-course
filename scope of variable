@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Scope of variable</h1>
+    <button onclick="myFunction()">Click Me</button>
+    <script>
+        var x = 10; 
+        function myFunction() {
+            var y=20;
+            document.write("Value of x is: " + x + "<br>");
+            document.write("Value of y is: " + y + "<br>");
+
+        }
+        document.write("Value of x is: " + x + "<br>");
+            document.write("Value of y is: " + y + "<br>");
+
+            </script>
+
+</body>
+</html>
