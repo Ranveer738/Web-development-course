@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> JS Function</h1>
+    <button onclick="myFunction()">Execute JS Function</button>
+    <button onclick="myFunction1(5,10)">Execute</button>
+    <script>
+        function myFunction() {
+           document.write("Hello, this is a JavaScript function!");
+        }
+        function myFunction1(x,y) {
+            document.write(x+y)
+        } 
+        </script>
+
+    
+</body>
+</html>
