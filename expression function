@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color: green;">Expression Function</h1>
+    <script>
+        var result = function(a,b) {
+            return a * b;
+        };
+        document.write("The result of the expression function is: " + result(35, 10.9) + "<br>");
+        var divi = function(a, b) {
+            return a/b;
+        };
+        document.write("The division of 1.2 and 2.3 is: " + divi(1.2, 2.3) + "<br>");
+        </script>
+
+    
+</body>
+</html>
