@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript Methods</h1>
+    <script>
+        var x = "Hello, World!";
+        document.write(x.toUpperCase()+"<br>");
+        document.write(x.toLowerCase()+"<br>");
+        document.write(x.startsWith("H")+"<br>")
+        var y = "I Learnt about Methods";
+        var z = new RegExp("about");
+        var result = z.test(y);
+        document.write(result+"<br>");
+        document.write(x.charAt(0)+"<br>");
+        document.write(x.indexOf("World")+"<br>");
+    </script>
+    
+</body>
+</html>
