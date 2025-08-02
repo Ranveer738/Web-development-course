@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-76">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Finding the largest no by object arguments</h1>
+    <h2 id="example">Example</h2>
+    <script>
+        function findmax() {
+            var max =0;
+            var i;
+            for (i=0; i < arguments.length; i++) {
+                if (arguments[i] > max) {
+                    max = arguments[i];
+                }
+            }
+            return max;
+        }
+        document.getElementById("example").innerHTML = 
+            "The largest number is: " + findmax(10, 20, 30, 40, 50);
+            </script>
+        
+
+
+</body>
+</html>
