@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Random Numbers Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #ff6f61;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            max-width: 400px;
+        }
+
+        button {
+            background-color: white;
+            color: #ff6f61;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 15px 5px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #f2f2f2;
+        }
+
+        .output {
+            margin-top: 20px;
+            text-align: left;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>JS Project: Random Values & Date</h2>
+        <button onclick="generateRandomSet()">Generate Random Set</button>
+        <div class="output" id="result"></div>
+    </div>
+
+    <script>
+        function generateRandomSet() {
+            let resultText = "";
+            const date = new Date();
+            resultText += `<strong>Current Date:</strong> ${date.toDateString()}<br>`;
+            resultText += `<strong>Random Numbers:</strong> `;
+            for (let i = 0; i < 5; i++) {
+                resultText += Math.floor(Math.random() * 100) + " ";
+            }
+            resultText += "<br>";
+            const rawRandom = Math.random() * 10;
+            const rounded = Math.round(rawRandom);
+            resultText += `<strong>Rounded Random Number (0–10):</strong> ${rounded}`;
+            document.getElementById("result").innerHTML = resultText;
+        }
+    </script>
+
+</body>
+
+</html>
