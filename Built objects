@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>built-in objects</h1>
+    <script type="text/javascript">
+        var value = Math.abs(-5);
+        document.write("The absolute value of -5 is: " + value + "<br>");
+        var value = Math.floor(24.5);
+            document.write("The floor value of 24.5 is: " + value + "<br>");
+        var value = Math.ceil(24.6);
+        document.write("The ceil value of 24.5 is: " + value + "<br>");
+        var value = Math.round(45.5);
+        document.write("The rounded value of 45.5 is: " + value + "<br>");
+        var value = Math.asin(0.5);
+        document.write("The arcsine of 0.5 is: " + value + "<br>");
+        var value = Math.acos(0.5);
+        document.write("The arccosine of 0.5 is: " + value + "<br>");
+        var value = Math.atan(0.5);
+        document.write("The arctangent of 0.5 is: " + value + "<br>");
+
+
+    </script>
+
+
+    
+</body>
+</html>
