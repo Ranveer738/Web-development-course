@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript objects and properties</h1>
+    <p>There are two different ways to access an object property.</p>
+    <p>You can use .property or ["property"]</p>
+    <h2 id="example">Example</h2>
+    <script>
+        var person = {
+            name: "John",
+            age: 30,
+            city: "New York"
+        };
+        document.getElementById("example").innerHTML = 
+            "My name is " + person.name +
+            ", I am " + person["age"] +
+            " years old and I live in " + person.city + ".";
+    </script>
+
+</body>
+</html>
