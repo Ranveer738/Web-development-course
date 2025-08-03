@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Methods in Array</h1>   
+<H2 id="methods"></H2>
+<h2 id ="methods1"></h2>
+<h3 id="methods2"></h3>
+<script>
+    var cars = ["BMW", "Volvo", "Mini"];
+    document.getElementById("methods").innerHTML =  cars.join( "* ");
+    document.getElementById("methods1").innerHTML = cars
+     cars.pop ();
+    document.getElementById("methods2").innerHTML = cars;
+</script>
+</body>
+</html>
