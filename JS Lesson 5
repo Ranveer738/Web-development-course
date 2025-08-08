@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Project</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #e0f7fa, #fce4ec);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 40px;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+        }
+
+        #output {
+            background-color: #ffffffcc;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            font-size: 1.1em;
+        }
+
+        h3 {
+            margin-top: 20px;
+            color: #007BFF;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JS Project </h1>
+    <div id="output"></div>
+
+    <script>
+        var student = {
+            name: "Riya",
+            age: 8,
+            grade: 3,
+            color: "Pink"
+        };
+
+        var studentInfo = "Name: " + student.name + "<br>" +
+            "Age: " + student["age"] + "<br>" +
+            "Grade: " + student.grade + "<br>" +
+            "Favorite Color: " + student.color;
+
+        var fruits = ["Apple", "Mango", "Banana", "Jackfruit"];
+
+        var fruitInfo = "First Fruit: " + fruits[0] + "<br>" +
+            "Second Fruit: " + fruits[1] + "<br>";
+
+        var joinedFruits = "All Fruits: " + fruits.join(" * ") + "<br>";
+        var poppedFruit = "Popped Fruit: " + fruits.pop();
+
+        document.getElementById("output").innerHTML =
+            "<h3>Student Info:</h3>" + studentInfo + "<br><br>" +
+            "<h3>Fruit Info:</h3>" + fruitInfo + joinedFruits + poppedFruit;
+    </script>
+</body>
+
+</html>
