@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Adding JS as separate File</h1>
+    <button onclick="showAlert()">Click Me</button>
+    <h2 id="heading"></h2>
+    <script src="external.js"></script>
+</body>
+</html>
+function showAlert() {
+    var a = 10;
+    document.getElementById("heading").innerHTML = a*a;
+    alert("The square of " + a + " is: " + a*a);
+}
+function validate(e) {
+    e.preventDefault();
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    var age = document.getElementById("age").value;
+    var msgbox = document.getElementById("message");
+    let message = "";
+    if (email === "") {
+        message = "Email is required.";
+        msgbox.style.color = "red";
+    } else if (password === "") {
+        message = "Password is required.";
+        msgbox.style.color = "red";
+    } else if (age === "") {
+        message = "Age must be between 12 and 50.";
+        msgbox.style.color = "red";
+    }
+    else
+        {
+            message = "Login successful!";
+            msgbox.style.color = "green";
+        }
+    msgbox.innerText = message;
+}
