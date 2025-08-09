@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML DOM Example</h1>
+    <p>This is the Welcome Page</p>
+    <h2 id="heading">This is a heading</h2>
+    <script>
+        text = document.getElementById("heading").innerHTML;
+        alert("the first heading is: " + text);
+    </script>
+</body>
+</html>
