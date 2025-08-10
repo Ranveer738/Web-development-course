@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Datatypes</h1>
+    <script>
+        var a = 10; // Integer
+        var b = "Hello"; // String
+        var c = true; // Boolean
+        var d = null; // Null
+        var e  // Undefined
+        document.write("Datatype of a is: " + typeof (a) + "<br>");
+        document.write("Datatype of b is: " + typeof (b) + "<br>");
+        document.write("Datatype of c is: " + typeof (c) + "<br>"); 
+        document.write("Datatype of d is: " + typeof (d) + "<br>");
+        document.write("Datatype of e is: " + typeof (e) + "<br>");
+    </script>
+</body>
+</html>
