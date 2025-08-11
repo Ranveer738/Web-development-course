@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Classes Inheritance</h1>
+    <p>Use extends keyword to inherit all the methods from another class</p>
+    <p>Use super() to call the constructor of the parent class</p>
+    <h2 id="a"></h2>
+    <h2 id="b"></h2>
+    <script>
+        class Car {
+            constructor(brand) {
+                this.brand = brand;
+            }
+            present() {
+                return "I have a " + this.brand;
+            }
+        }
+        class Model extends Car {
+            constructor(brand, mod) 
+            {
+                super(brand);
+                this.mod = mod;
+            }
+            display() {
+                return this.present() + ", it is a " + this.mod;
+            }
+        }
+         myCar = new Model("Ford", "Mustang");
+        document.getElementById("a").innerHTML = myCar.display();
+        
+
+        class Country {
+            constructor(name) {
+                this.name = name;
+            }
+            present() {
+                return "I live in " + this.name;
+            }
+        }
+            class Capital extends Country {
+                constructor(name, capital) {
+                    super(name);
+                    this.capital = capital;
+                }
+                display() {
+                    return this.present() + ", and the capital is " + this.capital;
+                }
+            }
+            myCountry = new Capital("India", "Delhi");
+            document.getElementById("b").innerHTML = myCountry.display();
+    </script>
+</body>
+</html>
