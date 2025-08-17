@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Click the button to evaluate JS expression:</p>
+    <button onclick="Tryit()">Try it</button>
+<h2 id="result"></h2>
+  <script>
+    function Tryit() {
+        let x = 5;
+        let y = 10073456;
+        let z = eval("x + y") ;
+         let a = eval("2*5678") + "<br>";
+         let b = eval("y-x") + "<br>";
+         let result1 = z + a + b;
+         document.getElementById("result").innerHTML = result1;
+    }
+  </script>
+</body>
+</html>
