@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Array Mapping</h1>
+    <p>multiply every element in array by 10:</p>
+    <h2 id="mapped"></h2>
+    <h2 id="mapped2"></h2>
+    <script>
+        let arr = [1, 2, 3, 4, 5];
+        function multiplyByTen(num) {
+            return num * 10;
+        }
+        let mappedArray = arr.map(multiplyByTen);
+        document.getElementById("mapped").innerHTML = mappedArray;
+        let arr2 = ["mango", "banana", "cherry"];
+        function toUppercase(str) {
+            return str.toUpperCase();
+        }
+        let mappedArray2 = arr2.map(toUppercase);
+        document.getElementById("mapped2").innerHTML = mappedArray2;
+        
+
+
+            
+    </script>
+
+</body>
+</html>
