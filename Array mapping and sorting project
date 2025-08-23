@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Mapping & Sorting</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      color: #fff;
+    }
+    h1 {
+      margin-bottom: 10px;
+    }
+    p {
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+    button {
+      background: #fff;
+      color: #2575fc;
+      border: none;
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #6a11cb;
+      color: #fff;
+    }
+    #x, #y {
+      margin-top: 20px;
+      padding: 15px;
+      width: 350px;
+      border-radius: 10px;
+      background: #fff;
+      color: #333;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <h1>JavaScript Array Mapping & Sorting</h1>
+  <p>Click a button to sort the mapped array:</p>
+
+  <button onclick="ascending()">Ascending</button>
+  <button onclick="descending()">Descending</button>
+
+  <h2 id="x"></h2>
+  <h2 id="y"></h2>
+
+  <script>
+    let arr = [5, 10, 15, 20];
+
+    // mapping using normal function
+    let mappedArr = arr.map(function(num) {
+      return num * 2;
+    });
+
+    document.getElementById("x").innerHTML = "Original Array: " + arr;
+    document.getElementById("y").innerHTML = "Mapped Array (x2): " + mappedArr;
+
+    function ascending() {
+      let asc = [].concat(mappedArr).sort(function(a, b) {
+        return a - b;
+      });
+      document.getElementById("y").innerHTML = "Ascending Order: " + asc;
+    }
+
+    function descending() {
+      let desc = [].concat(mappedArr).sort(function(a, b) {
+        return b - a;
+      });
+      document.getElementById("y").innerHTML = "Descending Order: " + desc;
+    }
+  </script>
+</body>
+</html>
