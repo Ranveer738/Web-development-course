@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Convert search and replace string</h1>
+    <scripT>
+        var m = "I am ranveer";
+        var n = m.replace("ranveer","RANVEER");
+        document.write(n + "<br>")
+        var a = "I am Palak mam student student";
+        var b = a.replace(/student/g,"Student2")
+        document.write(b +"<br>")
+        var c = "RANVEER,ranveer";
+                var e = c.replace(/RANVEER/i, "Codingal")
+                document.write(e + "<br")
+                var f = "I am Modi";
+                document.write(f.search(/Modi/))
+    </scripT>
+    
+    
+</body>
+</html>
