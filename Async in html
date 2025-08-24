@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Async and await in JS</h1>
+    <h2 id ="A"></h2>
+    <script>
+        async function add(a,b) {
+            var response = await a+b
+            display (response)
+        }
+        function display(sum){
+            document.getElementById("A").innerHTML = sum
+        }
+            add(234567890,8987654321)
+    </script>
+</body>
+</html>
