@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Dining</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+            color: #fff;
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h5 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #ffea00;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffea00;
+            font-size: 22px;
+        }
+
+        .main-container {
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            padding: 0 20px;
+        }
+
+        .m-heading {
+            font-size: 70px;
+            font-weight: 800;
+            color: #ffea00;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        #welcome-message {
+            font-size: 22px;
+            font-weight: 400;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+
+        .btn-main {
+            margin-top: 30px;
+            padding: 12px 35px;
+            background: #ff006e;
+            color: #fff;
+            font-weight: 600;
+            font-size: 18px;
+            border: none;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        .btn-main:hover {
+            background: #ffea00;
+            color: #000;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h5>Delicious Dining</h5>
+        <nav>
+            <a href="home2.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <div class="main-container">
+        <h1 class="m-heading">Welcome to Delicious Dining</h1>
+        <p id="welcome-message">Taste the art of fine dining — vibrant flavors, cozy ambiance, and unforgettable moments.</p>
+        <a href="Menu.html" class="btn-main">Explore Menu</a>
+    </div>
+</body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Dining - Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10;
+        }
+
+        header h5 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #ffea00;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffea00;
+            font-size: 22px;
+        }
+
+        .main-container {
+            height: 90vh;
+            background-image: url("https://images.unsplash.com/photo-1555992336-03a23c9d4b8d?auto=format&fit=crop&w=1500&q=80");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            padding: 0 20px;
+        }
+
+        .m-heading {
+            font-size: 70px;
+            font-weight: 800;
+            color: #ffea00;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        #welcome-message {
+            font-size: 22px;
+            font-weight: 400;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+
+        .btn-main {
+            margin-top: 30px;
+            padding: 12px 35px;
+            background: #ff006e;
+            color: #fff;
+            font-weight: 600;
+            font-size: 18px;
+            border: none;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        .btn-main:hover {
+            background: #ffea00;
+            color: #000;
+            transform: scale(1.1);
+        }
+
+        .menu {
+            margin: 80px auto;
+            max-width: 1000px;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .menu h2 {
+            font-size: 42px;
+            margin-bottom: 30px;
+            color: #ffea00;
+            font-weight: 700;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .menu ul li {
+            background: rgba(255, 255, 255, 0.1);
+            font-size: 20px;
+            padding: 15px;
+            border-radius: 15px;
+            border: 1px solid #ffea00;
+            transition: 0.3s;
+        }
+
+        .menu ul li:hover {
+            background: #ffea00;
+            color: #000;
+            transform: scale(1.05);
+        }
+
+        .menu p {
+            font-size: 18px;
+            margin-top: 25px;
+            color: #fff;
+        }
+
+        .menu-images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .menu-images img {
+            width: 220px;
+            height: 160px;
+            object-fit: cover;
+            margin: 10px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: 0.3s;
+        }
+
+        .menu-images img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h5>Delicious Dining</h5>
+        <nav>
+            <a href="home2.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <div class="main-container">
+        <h1 class="m-heading">Our Menu</h1>
+        <p id="welcome-message">Savor every flavor — fresh, vibrant, and crafted with love.</p>
+        <a href="#menu" class="btn-main">Explore Now</a>
+    </div>
+    <div class="menu" id="menu">
+        <h2>Discover Our Dishes</h2>
+        <ul>
+            <li>Appetizers</li>
+            <li>Main Courses</li>
+            <li>Desserts</li>
+            <li>Beverages</li>
+        </ul>
+        <p>Every dish is made from the finest ingredients and presented with passion by our chefs.</p>
+        <a href="order.html" class="btn-main">Order Now</a>
+        <div class="menu-images">
+            <img src="https://images.unsplash.com/photo-1604908177522-432fc1480d0c?auto=format&fit=crop&w=600&q=80"
+                alt="Appetizers">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80"
+                alt="Main Courses">
+            <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=600&q=80"
+                alt="Desserts">
+            <img src="https://images.unsplash.com/photo-1510626176961-4b57d4fbad03?auto=format&fit=crop&w=600&q=80"
+                alt="Beverages">
+        </div>
+    </div>
+</body>
+
+</html>
+</html>
