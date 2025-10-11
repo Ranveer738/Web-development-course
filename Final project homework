@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Dining</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+            color: #fff;
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h5 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #ffea00;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffea00;
+            font-size: 22px;
+        }
+
+        .main-container {
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            padding: 0 20px;
+        }
+
+        .m-heading {
+            font-size: 70px;
+            font-weight: 800;
+            color: #ffea00;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        #welcome-message {
+            font-size: 22px;
+            font-weight: 400;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+
+        .btn-main {
+            margin-top: 30px;
+            padding: 12px 35px;
+            background: #ff006e;
+            color: #fff;
+            font-weight: 600;
+            font-size: 18px;
+            border: none;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        .btn-main:hover {
+            background: #ffea00;
+            color: #000;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h5>Delicious Dining</h5>
+        <nav>
+            <a href="Home.html">Home</a>
+            <a href="Menu.html">Menu</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    </header>
+    <div class="main-container">
+        <h1 class="m-heading">Welcome to Delicious Dining</h1>
+        <p id="welcome-message">Taste the art of fine dining — vibrant flavors, cozy ambiance, and unforgettable moments.</p>
+        <a href="Menu.html" class="btn-main">Explore Menu</a>
+    </div>
+</body>
+
+</html>
