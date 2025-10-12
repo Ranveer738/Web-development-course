@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+    
+</head>
+<body>
+    <div id="container">
+        <div id="calculator">
+            <div id="keyboard">
+               <button class="operator" id ="clear">C</button>
+                <button class="operator" id ="backspace">←</button>
+                <button class="operator" id ="%">%</button>
+                <button class="operator" id ="/">&#247;</button>
+                <button class="number" id ="7">7</button>
+                <button class="number" id ="8">8</button>
+                <button class="number" id ="9">9</button>
+                <button class="operator" id ="*">&#215;</button>
+                <button class="number" id ="4">4</button>
+                <button class="number" id ="5">5</button>
+                <button class="number" id ="6">6</button>
+                <button class="operator" id ="-">-</button>
+                <button class="number" id ="1">1</button>
+                <button class="number" id ="2">2</button>
+                <button class="number" id ="3">3</button>
+                <button class="operator" id ="+">+</button>
+                <button class="empty" id ="empty"></button>
+                <button class="number" id ="0">0</button>
+                <button class="empty" id ="empty"></button>
+                <button class="operator" id ="=">=</button>
+            </div>
+</div>
+    </div>
+    <script src="Javascript.js"></script>
+</body>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:linear-gradient(to right, #8360c3, #2ebf91);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://4kwallpapers.com/images/wallpapers/gradient-background-6016x3384-11027.jpg");
+}
+#container {
+    width: 1000px;
+    height: 600px;
+    margin:20px auto;
+}
+#calculator {
+    width: 320px;
+    height: 520px;
+    margin: 0px auto;
+    top: 20px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: #f3f3f3;
+}
+#keyboard {
+    height: 400px;
+}
+.operator, .number, .empty {
+    background-color: #4CAF50;
+    color: white;
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+.operator:active, .number:active {
+    font-size: 13px;
+}
+
+</html>
