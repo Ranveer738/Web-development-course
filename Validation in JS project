@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        p#message {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #d9534f;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="loginForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" required>
+        <br><br>
+        <input type="submit" value="Login">
+    </form>
+    <p id="message"></p>
+    <script>
+        document.getElementById("loginForm").onsubmit = function(event) {
+            event.preventDefault(); 
+
+            var nameInput = document.getElementById("name");
+            var ageInput = document.getElementById("age");
+            var message = document.getElementById("message");
+
+            if (!nameInput.checkValidity()) {
+                message.innerHTML = nameInput.validationMessage;
+                return;
+            }
+
+            if (!ageInput.checkValidity()) {
+                message.innerHTML = ageInput.validationMessage;
+                return;
+            }
+
+            message.innerHTML = "Login successful!";
+        };
+    </script>
+        
+    
+</body>
+</html>
