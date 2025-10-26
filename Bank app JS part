@@ -1,0 +1,54 @@
+const transactionTypeInput = document.getElementById('transaction-type');
+const amountInput = document.getElementById('amount');
+const addButton = document.getElementById('add-transaction');
+const balanceDisplay = document.getElementById('balance');
+const totalCreditDisplay = document.getElementById('total-credit');
+const totalDebitDisplay = document.getElementById('total-debit');
+const transactionList = document.getElementById('transaction-list');
+
+let transactions = [];
+
+function updateSummary() {
+    const totalCredit = transactions.filter(t => t.type === 'credit')
+        .reduce((sum, t) => sum + t.amount, 0);
+    const totalDebit = transactions.filter(t => t.type === 'debit')
+        .reduce((sum, t) => sum + t.amount, 0);
+    const balance = totalCredit - totalDebit;
+
+    totalCreditDisplay.textContent = totalCredit.toFixed(2);
+    totalDebitDisplay.textContent = totalDebit.toFixed(2);
+    balanceDisplay.textContent = balance.toFixed(2);
+}
+
+function renderTransactions() {
+    transactionList.innerHTML = '';
+    transactions.forEach((t, index) => {
+        const div = document.createElement('div');
+        div.className = `transaction-item ${t.type}`;
+        div.innerHTML = `
+            <span>${t.type.toUpperCase()}: $${t.amount.toFixed(2)}</span>
+            <button onclick="deleteTransaction(${index})"><i class="fas fa-trash"></i></button>
+        `;
+        transactionList.appendChild(div);
+    });
+}
+
+window.deleteTransaction = function (index) {
+    transactions.splice(index, 1);
+    renderTransactions();
+    updateSummary();
+}
+
+addButton.addEventListener('click', () => {
+    const type = transactionTypeInput.value;
+    const amount = parseFloat(amountInput.value) || 0;
+
+    if (amount > 0) {
+        transactions.push({ type, amount });
+        amountInput.value = '';
+        renderTransactions();
+        updateSummary();
+    } else {
+        alert("Please enter a valid amount!");
+    }
+});
