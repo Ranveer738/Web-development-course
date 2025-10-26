@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #007acc;
+        }
+
+        p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .error {
+            color: #ff0000;
+            font-weight: bold;
+        }
+
+        .success {
+            color: #008000;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Try and Catch with User Input</h1>
+        <p id="result"></p>
+    </div>
+    <form id="inputForm">
+        <label for="userInput">Enter a number:</label>
+        <input type="text" id="userInput" name="userInput">
+        <button type="button" onclick="processInput()">Submit</button>
+    </form>
+    
+    <script>
+        function processInput() {
+            try {
+                let a = document.getElementById("userInput").value;
+
+                if(isNaN(a)) {
+                    throw "This is not a number!";
+                }
+                else if (a > 100) {
+                    throw "The number is too high!";
+                }
+                else if (a < 0) {
+                    throw "The number is too low!";
+                }
+                else {
+                    document.write("You have entered: " + a);
+                }
+            }
+            catch (err) {
+                document.write("Error: " + err);
+            }
+        }
+    </script>
+                
+</body>
+</html>
