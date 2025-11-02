@@ -1,0 +1,14 @@
+def add(a,c):
+    return a+c
+def subtract(a,c):
+    return a-c
+def Multiply(a,c):
+    return a*c
+def division(a,c):
+    return a/c
+a=float(input("Enter a no:"))
+c=float(input("Enter a no:"))
+print("add",add(a,c))
+print("subtract",subtract(a,c))
+print("Multiply",Multiply(a,c))
+print("division",division(a,c))
