@@ -1,0 +1,12 @@
+def factorial(n):
+    if n==1:
+        return n
+    else:
+        return n*factorial(n-1)
+a=int(input("Enter a number:"))
+if a<0:
+    print("Factorial not exist for a<0")
+elif a==0:
+    print("Factorial of zero is 1")
+else:
+    print("Factorial of ",a,"is",factorial(a))
