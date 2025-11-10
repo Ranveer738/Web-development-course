@@ -1,0 +1,21 @@
+import turtle
+x=turtle.Turtle()
+s=turtle.Screen()
+s.setup(400,300)
+colors=["violet","indigo","blue","green","yellow","orange","red"]
+s.bgcolor("black")
+x.speed("fastest")
+x.hideturtle()
+while True:
+    for i in range(200): 
+        x.pencolor(colors[i%len(colors)])
+        x.width(i/100+1)
+        x.forward(i)
+        x.left(59)
+    x.right(239)
+    for i in range(200,0,-1):
+        x.pencolor("black")
+        x.width(i/100+7)
+        x.forward(i)
+        x.right(59)
+turtle.done()
