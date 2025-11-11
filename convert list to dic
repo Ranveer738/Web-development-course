@@ -1,0 +1,8 @@
+def ld(l):
+    dic={}
+    for i in l: 
+        dic[i[0]]=i[1:]
+    return dic
+l=[[1,"sonu"],[2,"monu"],[3,"ronu"]]
+print(l)
+print(ld(l))
