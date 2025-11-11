@@ -1,0 +1,20 @@
+list1=["mango","apple","banana","guava","orange"]
+print("length opf the list is",len(list1))
+print("first and last element are",list1[0],list1[4])
+list1.append("papaya")
+print("updated list is",list1)
+list1.remove("guava")
+print("updated list is",list1)
+list1.pop(1)
+print("updated list is",list1)
+list1.reverse()
+print("updated list is",list1)
+x=list1*2
+print("updated list is",x)
+y=list1[0:4]
+print("updated list is",y)
+list1.clear()
+print("updated list is",list1)
+list2=["mango","apple","banana","guava","orange"]
+list2.sort()
+print("updated list is",list2)
