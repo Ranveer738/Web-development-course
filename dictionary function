@@ -1,0 +1,13 @@
+mydic={}
+mydic2={1: "one",2:"two" }
+mydic3={2: "one",2.5:"two and half","Name":"sonu" }
+print("dictionary element is:",mydic3["Name"])
+print("dictionary element is:",mydic3.get("Name"))
+mydic3[2.5]="two and 3"
+print("dictionary  is:",mydic3)
+mydic3[True]=False
+print("dictionary  is:",mydic3)
+mydic2.clear()
+print("dictionary  is:",mydic2)
+del mydic2
+print("dictionary  is:",mydic2)
