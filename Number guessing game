@@ -1,0 +1,22 @@
+def d2l(d):
+    out = []
+    for k in d:
+        out.append([k, d[k]])
+    return out
+
+d = {1: "apple", 2: "banana", 3: "cherry"}
+
+print(d)
+print(d2l(d))
+#Guessing a number game 
+import random
+number = random.randint(1, 100)
+guess = None
+while guess != number:
+    guess = int(input("Enter your guess (1-100): "))
+    if guess < number:
+        print("Too low! Try again.")
+    elif guess > number:
+        print("Too high! Try again.")
+    else:
+        print("Congratulations! You've guessed the number!")
