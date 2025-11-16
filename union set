@@ -1,0 +1,3 @@
+set1={"apple","banana"}
+set2={"apple","grape"}
+print(set1.union(set2))
