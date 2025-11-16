@@ -1,0 +1,28 @@
+tuple1=()
+print(tuple1)
+t2=(1,2,34,5)
+print(t2)
+t3=("smjdn",10.5,679)
+print(t3)
+t4=(1,(2,3,4,5),"hello")
+print(t4)
+t5=(132453421,"codingal",21,17.5432,"h")
+x=t5[1]
+print("the first element is",x)
+t6=(12,(10.5,34324,20987),("hello world","hello india"),0.09876543)
+y=t6[2][0]
+print("the first element is",y)
+z=t6[1][0]
+print("the first element is",z)
+t8=("sohan","mohan","rehan")
+for i in (t8):
+    print("hello ",i)
+i=0
+list23=[]
+while i<len(t8):
+    list23.append("hello "+t8[i])
+    i=i+1
+print(list23)
+    
+
+    
