@@ -1,0 +1,13 @@
+class parrot:
+    species="bird"
+    def __init__(self,Color,age):
+        self.Color=Color
+        self.age=age
+ob=parrot("Green",12)
+print("Parrot is a",ob.species)
+print("It is",ob.Color,"in color")
+print("It is",ob.age,"years old")
+ob1=parrot("Red",11)
+print("Parrot is a",ob1.species)
+print("It is",ob1.Color,"in color")
+print("It is",ob1.age,"years old")
