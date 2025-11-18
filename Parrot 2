@@ -1,0 +1,13 @@
+class parrot:
+    def __init__(self,Color,age):
+        self.Color=Color
+        self.age=age
+    def sing(self,song):
+        print("Parrot loves this song",song)
+    def dance(self,dance):
+        print("Parrot loves this",dance)
+x=parrot("Yellow",13)
+x.sing("Despacito")
+x.dance("Salsa")
+print("It is",x.Color,"in color")
+print("It is",x.age,"years old")
