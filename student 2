@@ -1,0 +1,11 @@
+class student:
+    grade=10
+    Name="Ranveer"
+    def intro(self):
+        print("Hi i m a student")
+    def details(self):
+        print("My name is",self.Name,"my grade is",self.grade)
+#object creation
+ob=student()
+ob.intro()
+ob.details()
