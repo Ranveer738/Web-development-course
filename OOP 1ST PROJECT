@@ -1,0 +1,13 @@
+class Robot:
+    def __init__(self, name, year):
+        self.name = name
+        self.year = year
+    def introduce_self(self):
+        print("My name is", self.name)
+        print("I was created in", self.year)
+r1 = Robot("perplexity", 2020)
+r1.introduce_self()
+r2 = Robot("Humanoid robot", 2021)
+r2.introduce_self()
+print("Robot 1 is named", r1.name, "and was created in", r1.year)
+print("Robot 2 is named", r2.name, "and was created in", r2.year)
