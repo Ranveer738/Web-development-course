@@ -1,0 +1,53 @@
+class Library:
+    def __init__(self,List,Name):
+        self.booklist=List
+        self.Name=Name
+        self.lenddict={}
+    def displaybooks(self):
+        print("We have following books in our library",self.Name)
+        for book in self.booklist:
+            print(book)
+    def lendbooks(self,User,Book):
+        if Book not in self.lenddict.keys():
+            self.lenddict.update({Book:User})
+            print("Lender book database has been updated.You can take the book now")
+        else:
+            print("Book is already lended to someone else",self.lenddict[Book])
+    def addbook(self,book):
+        self.booklist.append(book)
+        print("Book has been added to the booklist")
+    def returnbook(self,book):
+        self.lenddict.pop(book)
+if __name__=="__main__":
+    books=Library(["willy wonka","Harry potter","python","Atomic habits"],"A to Z books")
+    while True:
+        print("Welcome to the",books.Name,"Library,Enter your choice to continue")
+        print("1:Display books","2:Lend a book","3:Add a book","4:return a book")
+        userchoice=input("Enter your choice")
+        if userchoice not in ["1","2","3","4"]:
+            print("Pls enter a valid option")
+            continue
+        else:
+            userchoice=int(userchoice)
+        if userchoice==1:
+            books.displaybooks()
+        elif userchoice==2:
+            book=input("Enter the name of the book you want to be lended")
+            user=input("enter your name")
+            books.lendbooks(user,book)
+        elif userchoice==3:
+          book=input("Enter the name of the book you want to add")
+          books.addbook(book)
+        elif userchoice==4:
+          book=input("Enter the name of the book you want to return")
+          books.returnbook(book)
+        else:
+            print("Not a valid option")
+        print("press Q to quit and c to continue")
+        x=""
+        while(x!="c"and x!="q"):
+            x=input()
+            if x=="q":
+                exit()
+            elif x=="c":
+                continue
