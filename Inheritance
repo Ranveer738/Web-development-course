@@ -1,0 +1,16 @@
+class person:
+    def __init__(self,name,idnumber):
+        self.name=name
+        self.idnumber=idnumber
+    def display(self):
+        print("The name of employee is",self.name)
+        print("The id of employee is",self.idnumber)
+class employee(person):
+    def __init__(self,name,idnumber,salary,post):
+        self.salary=salary
+        self.post=post
+        person.__init__(self,name,idnumber)
+obj=employee("Ranveer",3190545,4500000,"CEO")
+obj.display()
+    
+    
