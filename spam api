@@ -1,0 +1,31 @@
+import requests
+from config2 import HF_API_KEY1
+
+URL = "https://router.huggingface.co/hf-inference/models/facebook/bart-large-mnli"
+HEADERS = {"Authorization": f"Bearer {HF_API_KEY1}"}
+
+LABELS = ["Spam", "Safe"]
+print("Welcome Type a message to classify it.")
+
+while True:
+    message = input("(type exit to Quit) Enter message: ").strip()
+    if message.lower() == "exit":
+        print("Good bye")
+        break
+    if not message:
+        print("Please type something")
+        continue
+    try:
+        res = requests.post(URL, headers=HEADERS, json={"inputs": message, "parameters": {"candidate_labels": LABELS}}, timeout=30).json()
+        
+        if isinstance(res, list):
+            res = res[0]
+            
+        if "error" in res:
+            print(f"Error: {res['error']}")
+            continue
+            
+        print(f"Result: {res['labels'][0]} ({res['scores'][0]*100:.1f}%)")
+        
+    except Exception as e:
+        print(f"Somethign went wrong,Check Your internet! Error:{e}\n")
