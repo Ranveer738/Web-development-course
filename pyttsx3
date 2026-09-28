@@ -1,0 +1,67 @@
+import random
+
+try:
+    import pyttsx3
+    TTS_AVAILABLE = True
+except ImportError:
+    TTS_AVAILABLE = False
+    print("⚠️ Run: pip install pyttsx3")
+
+
+def speak(text):
+    """Initialize engine, speak, and clean up to prevent event loop freezes."""
+    if not TTS_AVAILABLE:
+        print(f"🔊 [AUDIO FALLBACK]: {text}")
+        return
+
+    try:
+        engine = pyttsx3.init()
+        engine.setProperty("rate", 150)
+        engine.setProperty("volume", 0.9)
+        engine.say(text)
+        engine.runAndWait()
+        engine.stop()
+    except Exception as e:
+        print(f"⚠️ Audio playback error: {e}")
+        print(f"🔊 [AUDIO FALLBACK]: {text}")
+
+
+def get_samples():
+    """Fun phrases to try."""
+    return [
+        "Hello! I am your computer!",
+        "Python is awesome!",
+        "This is AI speaking!",
+        "Welcome to the future!"
+    ]
+
+
+def main():
+    print("🎙️ AI VOICE LAB")
+    print("===============")
+
+    if TTS_AVAILABLE:
+        print("✅ Voice ready! Try typing something...")
+    else:
+        print("⚠️ No audio engine initialized, using text mode.")
+
+    speak("Hello! Type something for me to say!")
+
+    while True:
+        text = input("\n👤 You: ").strip()
+
+        if text.lower() == 'exit':
+            speak("Goodbye!")
+            break
+        elif text.lower() == 'sample':
+            phrase = random.choice(get_samples())
+            print(f"💡 {phrase}")
+            speak(phrase)
+        elif text:
+            speak(text)
+        else:
+            print("💡 Type 'sample' for ideas or 'exit' to quit")
+
+
+if __name__ == "__main__":
+    main()
