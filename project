@@ -1,0 +1,106 @@
+import random
+
+try:
+    import pyttsx3
+    TTS_AVAILABLE = True
+except ImportError:
+    TTS_AVAILABLE = False
+    print("⚠️ Run: pip install pyttsx3")
+
+
+def speak(text, rate=150, volume=0.9):
+    if not TTS_AVAILABLE:
+        print(f"🔊 [AUDIO FALLBACK]: {text}")
+        return
+
+    try:
+        engine = pyttsx3.init()
+        engine.setProperty("rate", rate)
+        engine.setProperty("volume", volume)
+        engine.say(text)
+        engine.runAndWait()
+        engine.stop()
+    except Exception as e:
+        print(f"⚠️ Audio playback error: {e}")
+        print(f"🔊 [AUDIO FALLBACK]: {text}")
+
+
+def get_samples():
+    return [
+        "Hello! I am your computer!",
+        "Python is awesome!",
+        "This is AI speaking!",
+        "Welcome to the future!",
+        "Coding is a lot of fun!",
+        "Artificial intelligence is growing fast!",
+        "Always keep learning new things!",
+        "Robots will rule the digital world!",
+        "Have a fantastic day ahead!"
+    ]
+
+
+def get_jokes():
+    return [
+        "Why do programmers prefer dark mode? Because light attracts bugs!",
+        "Why do pythons live in warm places? Because they love the syntax!",
+        "How many programmers does it take to change a light bulb? None, that's a hardware problem!",
+        "Why did the computer cross the road? Because it had a good driver!"
+    ]
+
+
+def main():
+    print("🎙️ AI VOICE LAB")
+    print("===============")
+
+    rate = 150
+    volume = 0.9
+
+    if TTS_AVAILABLE:
+        print("✅ Voice ready! Try typing a command...")
+    else:
+        print("⚠️ No audio engine initialized, using text mode.")
+
+    speak("Hello! Type a command for me to run!", rate, volume)
+
+    while True:
+        text = input("\n👤 You: ").strip().lower()
+
+        if text == 'exit':
+            speak("Goodbye!", rate, volume)
+            break
+        elif text == 'sample':
+            phrase = random.choice(get_samples())
+            print(f"💡 {phrase}")
+            speak(phrase, rate, volume)
+        elif text == 'tell a joke':
+            joke = random.choice(get_jokes())
+            print(f"💡 {joke}")
+            speak(joke, rate, volume)
+        elif text == 'speed up':
+            rate += 25
+            msg = f"Speed increased to {rate}"
+            print(f"💡 {msg}")
+            speak(msg, rate, volume)
+        elif text == 'slow down':
+            rate = max(50, rate - 25)
+            msg = f"Speed decreased to {rate}"
+            print(f"💡 {msg}")
+            speak(msg, rate, volume)
+        elif text == 'increase volume':
+            volume = min(1.0, round(volume + 0.1, 1))
+            msg = f"Volume increased to {volume}"
+            print(f"💡 {msg}")
+            speak(msg, rate, volume)
+        elif text == 'decrease volume':
+            volume = max(0.1, round(volume - 0.1, 1))
+            msg = f"Volume decreased to {volume}"
+            print(f"💡 {msg}")
+            speak(msg, rate, volume)
+        else:
+            error_msg = "I didn't quite catch that. Try again!"
+            print(f"⚠️ {error_msg}")
+            speak(error_msg, rate, volume)
+
+
+if __name__ == "__main__":
+    main()
